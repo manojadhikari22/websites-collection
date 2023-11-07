@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #fff;
+    --secondary-color: black;
+    --green: green;
+    --color-teritary: red;
+    --color-accent-1: rgba(0, 0, 0, 0.2);
+    --color-accent-2: lavender;
+    --color-accent-3: darkgoldenrod;
+    --color-accent-4: aqua;
+    --color-accent-5: rebeccapurple;
+    --color-accent-6: #333;
+    --color-accent-7: #555;
+
+
+    --font-size-base: 1rem;
+    --font-size-vvery-small: 18px;
+	--font-size-very-small: 1.3rem;
+	--font-size-small: 1.4rem;
+    --font-size-mellom-sm: 1.5rem;
+	--font-size-medium: 1.8rem;
+    --font-size-medium-large: 1.9rem;
+	--font-size-large: 2.2rem;
+
+    
+    --spacing-base: 5px;
+    --spacing-very-small: 0.5rem;
+	--spacing-small: 10px;
+    --spacing-medium: 1rem;
+	--spacing-medium-large: 1.2rem;
+	--spacing-large: 2rem;
+    --spacing-Xlarge: 3rem;
+    --spacing-very-large: 7rem;
+}
