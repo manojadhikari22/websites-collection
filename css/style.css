@@ -1,7 +1,8 @@
 /* Reset some default styles */
-body, h2, p, a {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Basic styles */
@@ -76,11 +77,10 @@ nav ul li a {
 
 .container {
     width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: auto;
-    margin-left: var(--spacing-very-large);
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     padding: var(--spacing-large);
 }
 .container div {
@@ -97,136 +97,34 @@ main h1 {
     margin-bottom: var(--spacing-medium);
 }
 
-.container .content-nepal {
-    width: 300px;
-    height: auto;
+.container .website-name {
+    padding-left: var(--spacing-very-small);
     background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .content-nepal p {
-    margin-top: var(--spacing-very-small);
-}
-.container .content-norway {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .content-norway p {
-    margin-top: var(--spacing-very-small);
-}
-.container .content-usa {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .content-usa p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-news {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .website-news p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-kurs {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin-top: var(--spacing-medium);
-    margin: var(--spacing-medium);
-}
-.container .website-kurs p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-food {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .website-food p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-social {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .website-social p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-university {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .website-university p {
-    margin-top: var(--spacing-very-small);
-}
-.container .website-shopping {
-    width: 300px;
-    height: auto;
-    background-color: var(--primary-color);
-    justify-items: center;
-    text-align: start;
-    box-shadow: 0 0 var(--spacing-base) var(--color-accent-1);
-    padding: var(--spacing-very-small);
-    margin: var(--spacing-medium);
-}
-.container .website-shopping p {
+    }
+.container .website-name p {
     margin-top: var(--spacing-very-small);
 }
 
 .container button {
-    border-radius: var(--spacing-medium);
+    border-radius: var(--spacing-small);
     background-color: var(--primary-color);
     border: 0.5px solid var(--color-accent-2);
-    padding: 0.3rem;
-    margin-top: var(--spacing-medium);
+    padding: 0.5rem;
+    margin: var(--spacing-very-small);
 }
 
 .website-web {
-    width: 300px;
-    height: auto;
     background-color: var(--primary-color);
     box-shadow: 0 0 var(--spacing-base) var(--color-accent-1);
-    margin: var(--spacing-medium-large);
-    border-radius: var(--spacing-very-small);
+}
+.website-web h2.website-name {
+    width: 280px;
+    font-size: var(--font-size-vvery-small);
+    margin: var(--spacing-small);
 }
 .website-web img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 200px;
     transition: all 0.5s ease-out;
 }
 .website-web img.img {
@@ -246,29 +144,11 @@ main h1 {
     color: var(--color-accent-5);
 }
 
-.website-web h2.website-name {
-    font-size: var(--font-size-vvery-small);
-    margin: var(--spacing-small);
-}
-
 .website-web p.website-description {
     font-size: var(--font-size-base);
     margin: 0 var(--spacing-small) var(--spacing-small) var(--spacing-small);
 }
 
-.website-web a.visit-link {
-    display: block;
-    background-color: var(--color-accent-6);
-    color: var(--primary-color);
-    text-align: center;
-    padding: var(--spacing-small);
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.website-web a.visit-link:hover {
-    background-color: var(--color-accent-7);
-}
 
 /* Footer section */
 
