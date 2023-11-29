@@ -18,4 +18,4 @@ const activeheader = () => {
     }
     currentScrollpos = prevScrollpos;
 }
-window.addEventListener('scroll', activeheader);// eventListener foe the scroll event on the 'window' object.
+window.addEventListener('scroll', activeheader);// eventListener for the scroll event on the 'window' object.
